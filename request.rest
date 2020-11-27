@@ -1,0 +1,23 @@
+End point to fetch and store 100(if exist) data from news api 
+GET http://localhost:3012/
+
+Fetch headlines from Our databse using pagination and short by date
+GET http://localhost:3012/headline?page=3&limit=10
+
+Update headline in our database
+PUT http://localhost:3012/headline/5fc14e08a3d34f40515416f2
+  
+  In body in JSON to update
+
+  { "source": {
+                "id": "odari-press",
+                "name": "ppp"
+            },
+            "author": "c annna anna",
+            "title": "Ethiopians flee Tigray capital in fear of imminent assault - The Associated Press",
+            "description": "NAIROBI, Kenya (AP) — People continued to flee the capital of Ethiopia’s embattled Tigray region in fear of an imminent assault after Prime Minister Abiy Ahmed said the army had been ordered to...",
+            "url": "https://apnews.com/article/coronavirus-pandemic-abiy-ahmed-ethiopia-united-nations-kenya-f497300cca1a6560c5e8ae48fde442b5",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/2ce19338b3874e6696b5ff4fa84a2ad3/3000.jpeg",
+            "content": "NAIROBI, Kenya (AP) People continued to flee the capital of Ethiopias embattled Tigray region in fear of an imminent assault after Prime Minister Abiy Ahmed said the army had been ordered to move in … [+2918 chars]"
+        }
+
